@@ -1,3 +1,5 @@
+//Method-2
+
 class Solution {
 public:
     int myAtoi(string s) {
@@ -21,5 +23,25 @@ public:
         num = (num < INT_MIN) ? INT_MIN : num;
         cout<<num<<endl;
         return int(num);   
+    }
+};
+
+//Method-1
+
+#include<string>
+class Solution {
+public:
+    int myAtoi(string s) {
+    // object from the class stringstream
+	stringstream strst;
+
+	// inserting string s in geek stream
+	strst << s;
+
+	// The object has the value
+	// and stream it to the integer x
+	int x = 0;
+	strst >> x;
+    return x;  
     }
 };
