@@ -1,5 +1,5 @@
 //Method-2
-
+// solved using string STL
 class Solution {
 public:
     bool isPalindrome(int x) {
@@ -13,6 +13,7 @@ public:
 };
 
 //Method-1
+// Solved using vector functions 
 
 class Solution {
 public:
